@@ -1,0 +1,411 @@
+
+
+::-moz-selection,
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+* {
+	position: relative;
+	box-sizing: border-box;
+}
+
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+    color: #222;
+    font-family: 'Miso', sans-serif;
+    font-weight: 400;
+}
+
+html {
+
+	font-size: 16px;
+	line-height: 1.25;
+    background-color: #fff;
+
+}
+
+body {
+
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+	padding: 0;
+	margin: 0;
+}
+
+h1,h2,h3,h4 {
+
+	font-family: 'Miso', 'Arial', sans-serif;
+	margin: 0;
+
+}
+
+p, ul, ol, address, nav {
+	margin-top: 0;
+	margin-bottom: 1.25rem;
+}
+
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+
+img {
+	max-width: 100%;
+    vertical-align: middle;
+}
+
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+
+a {
+
+	text-decoration: none;
+
+	outline: none;
+
+	color: #222;
+
+}
+
+	a:visited {
+		opacity: .95;
+	}
+
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+
+nav ul {
+
+	list-style: none;
+
+	margin: 0;
+}
+
+.doc {
+
+	display: flex;
+
+	flex-direction: column;
+
+}
+
+.doc > * {
+
+	flex: 0 0 auto;
+
+}
+
+.doc__content {
+
+	max-width: 720px;
+	margin: auto;
+	padding: 2rem;
+	text-align: center;
+	margin-bottom: 2.5rem;
+
+	order: 2;
+
+}
+
+	.site__logo {
+
+		display: block;
+
+		margin: 0 auto;
+
+		-webkit-animation-duration: 1s;
+				animation-duration: 1s;
+
+		-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+
+		-webkit-animation-name: rubberBand;
+				animation-name: rubberBand;
+
+	}
+
+	.site__title {
+
+		font-size: 3rem;
+
+		line-height: 3.5rem;
+
+		margin-bottmo: .25rem;
+
+	}
+
+
+	.site__tagline {
+
+		font-size: 2rem;
+
+		line-height: 2rem;
+
+		margin: .5rem;
+
+	}
+
+
+
+.doc__message {
+
+	order: 1;
+
+}
+
+	.message {
+
+
+		max-width: 720px;
+
+		margin: auto;
+
+	}
+
+
+
+	.message--available {
+
+		padding: 1.25rem;
+
+		text-align: center;
+
+		background-color: #DBECB9;
+
+	}
+
+	.message--available p {
+
+		margin-bottom: 0;
+
+	}
+
+	.badge--10years {
+
+		position: absolute;
+
+		top: 5rem;
+
+		right: 1rem;
+
+		z-index: 3;
+
+		transform: rotate(15deg);
+
+		width: 6rem;
+
+	}
+
+
+	@media only screen and ( min-width: 30rem ) {
+
+		.badge--10years {
+
+			top: 2.5rem;
+
+		}
+
+	}
+
+
+.doc__footer {
+
+	order: 3;
+
+	max-width: 720px;
+	margin: auto;
+	padding: 2rem;
+	margin-bottom: 2.5rem;
+
+}
+
+
+	.doc__footer div {
+
+		margin-bottom: 2.5rem;
+
+	}
+
+	.doc__footer nav {
+
+		text-align: center;
+
+		padding: 1.25rem;
+
+	}
+
+	.doc__footer h3 {
+
+		text-transform: uppercase;
+
+	}
+
+	.doc__footer ul {
+
+		margin: 0;
+
+		padding: 0;
+	}
+
+
+
+
+	@media only screen and ( min-width: 30rem ) {
+
+		.doc__footer div {
+
+		  	display: flex;
+
+		  	justify-content: center;
+
+		}
+
+		.doc__footer nav {
+
+			flex: 1 1 auto;
+
+			padding: 2.5rem;
+
+		  	text-align: left;
+
+		}
+
+	}
+
+	.footer__share nav {
+
+		text-align: center;
+
+
+	}
+
+	.footer__share li {
+
+		display: inline-block;
+
+		margin-left: .125rem;
+
+		margin-right: .125rem;
+	}
+
+
+
+
+@font-face {
+    font-family: 'Miso';
+    src: url('miso-fontfacekit/miso-regular.eot');
+    src: url('miso-fontfacekit/miso-regular.eot?#iefix') format('embedded-opentype'),
+         url('miso-fontfacekit/miso-regular.woff') format('woff'),
+         url('miso-fontfacekit/miso-regular.ttf') format('truetype');
+/*          url('miso-regular.svg#GudeaRegular') format('svg'); */
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Miso';
+    src: url('miso-fontfacekit/miso-light.eot');
+    src: url('miso-fontfacekit/miso-light.eot?#iefix') format('embedded-opentype'),
+         url('miso-fontfacekit/miso-light.woff') format('woff'),
+         url('miso-fontfacekit/miso-light.ttf') format('truetype');
+/*          url('Gudea-Italic-webfont.svg#GudeaItalic') format('svg'); */
+    font-weight: lighter;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Miso';
+    src: url('miso-fontfacekit/miso-bold.eot');
+    src: url('miso-fontfacekit/miso-bold.eot?#iefix') format('embedded-opentype'),
+         url('miso-fontfacekit/miso-bold.woff') format('woff'),
+         url('miso-fontfacekit/miso-bold.ttf') format('truetype');
+/*          url('Gudea-Bold-webfont.svg#GudeaBold') format('svg'); */
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+
+@-webkit-keyframes rubberBand {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  30% {
+    -webkit-transform: scaleX(1.25) scaleY(0.75);
+    transform: scaleX(1.25) scaleY(0.75);
+  }
+
+  40% {
+    -webkit-transform: scaleX(0.75) scaleY(1.25);
+    transform: scaleX(0.75) scaleY(1.25);
+  }
+
+  60% {
+    -webkit-transform: scaleX(1.15) scaleY(0.85);
+    transform: scaleX(1.15) scaleY(0.85);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes rubberBand {
+  0% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scaleX(1.25) scaleY(0.75);
+  }
+
+  40% {
+    transform: scaleX(0.75) scaleY(1.25);
+  }
+
+  60% {
+    transform: scaleX(1.15) scaleY(0.85);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
