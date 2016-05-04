@@ -2017,7 +2017,8 @@ a {
 - - - - - - - - - - - - - - - - - - - - - */
 #public {
   margin: auto;
-  padding: 0; }
+  padding: 0;
+  background-color: #f7f7f7; }
 
 #container {
   margin: auto;
@@ -2031,7 +2032,21 @@ a {
 header.info {
   padding: 0;
   margin: 0;
-  border: none; }
+  border: none;
+  padding-top: 12px;
+  padding-top: 0.75rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
+  padding-right: 12px;
+  padding-right: 0.75rem;
+  padding-left: 12px;
+  padding-left: 0.75rem; }
+  @media screen and (min-width: 81em) {
+    header.info {
+      padding-right: 24px;
+      padding-right: 1.5rem;
+      padding-left: 24px;
+      padding-left: 1.5rem; } }
   header.info h2 {
     margin: 0;
     margin-bottom: 18px;
