@@ -2280,7 +2280,7 @@ form.wufoo {
     padding-right: 0.75rem;
     padding-left: 12px;
     padding-left: 0.75rem;
-    width: calc( 100% + 24px );
+    width: calc( 100% + 24px ) !important;
     right: -12px;
     right: -0.75rem;
     left: -12px;
@@ -2293,7 +2293,7 @@ form.wufoo {
         padding-left: 1.5rem; } }
     @media screen and (min-width: 81em) {
       form.wufoo li.focused {
-        width: calc( 100% + 48px );
+        width: calc( 100% + 48px ) !important;
         right: -24px;
         right: -1.5rem;
         left: -24px;
