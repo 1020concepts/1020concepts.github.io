@@ -2237,12 +2237,6 @@ form.wufoo {
         -moz-box-flex: 1 0 auto;
         -ms-flex: 1 0 auto;
         flex: 1 0 auto; }
-    form.wufoo > ul > li span + span,
-    form.wufoo > ul > li.section span + span,
-    form.wufoo > ul > li.first span + span,
-    form.wufoo > ul > li.complex span + span {
-      margin-left: 6px;
-      margin-left: 0.375rem; }
     form.wufoo > ul > li span.full,
     form.wufoo > ul > li span.left,
     form.wufoo > ul > li.section span.full,
@@ -2301,6 +2295,7 @@ form.wufoo {
     display: block;
     text-align: right; }
   form.wufoo textarea,
+  form.wufoo input.text,
   form.wufoo input[type="color"],
   form.wufoo input[type="date"],
   form.wufoo input[type="datetime"],
@@ -2333,6 +2328,7 @@ form.wufoo {
     font-size: 1rem;
     background-image: none !important; }
     form.wufoo textarea:focus,
+    form.wufoo input.text:focus,
     form.wufoo input[type="color"]:focus,
     form.wufoo input[type="date"]:focus,
     form.wufoo input[type="datetime"]:focus,
