@@ -2090,6 +2090,14 @@ form.wufoo {
   form.wufoo > ul > li.section,
   form.wufoo > ul > li.first,
   form.wufoo > ul > li.complex {
+    padding-top: 12px;
+    padding-top: 0.75rem;
+    padding-bottom: 12px;
+    padding-bottom: 0.75rem;
+    padding-right: 12px;
+    padding-right: 0.75rem;
+    padding-left: 12px;
+    padding-left: 0.75rem;
     position: relative;
     display: block;
     display: -webkit-flex;
@@ -2103,6 +2111,15 @@ form.wufoo {
     margin: 0;
     margin-bottom: 24px;
     margin-bottom: 1.5rem; }
+    @media screen and (min-width: 81em) {
+      form.wufoo > ul > li,
+      form.wufoo > ul > li.section,
+      form.wufoo > ul > li.first,
+      form.wufoo > ul > li.complex {
+        padding-right: 24px;
+        padding-right: 1.5rem;
+        padding-left: 24px;
+        padding-left: 1.5rem; } }
     form.wufoo > ul > li::after,
     form.wufoo > ul > li.section::after,
     form.wufoo > ul > li.first::after,
@@ -2271,33 +2288,7 @@ form.wufoo {
       align-self: flex-end;
       width: 100%; }
   form.wufoo li.focused {
-    background-color: #eff8fc;
-    padding-top: 12px;
-    padding-top: 0.75rem;
-    padding-bottom: 12px;
-    padding-bottom: 0.75rem;
-    padding-right: 12px;
-    padding-right: 0.75rem;
-    padding-left: 12px;
-    padding-left: 0.75rem;
-    width: calc( 100% + 24px ) !important;
-    right: -12px;
-    right: -0.75rem;
-    left: -12px;
-    left: -0.75rem; }
-    @media screen and (min-width: 81em) {
-      form.wufoo li.focused {
-        padding-right: 24px;
-        padding-right: 1.5rem;
-        padding-left: 24px;
-        padding-left: 1.5rem; } }
-    @media screen and (min-width: 81em) {
-      form.wufoo li.focused {
-        width: calc( 100% + 48px ) !important;
-        right: -24px;
-        right: -1.5rem;
-        left: -24px;
-        left: -1.5rem; } }
+    background-color: #eff8fc; }
   form.wufoo li.buttons {
     display: block;
     text-align: right; }
