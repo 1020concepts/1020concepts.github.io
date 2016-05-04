@@ -2350,6 +2350,7 @@ form.wufoo {
       border: 1px solid #51be8c;
       outline: 1px solid #51be8c; }
   form.wufoo label.desc,
+  form.wufoo label.choice,
   form.wufoo legend.desc {
     padding: 0;
     margin: 0;
