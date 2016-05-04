@@ -2382,7 +2382,7 @@ form.wufoo {
     form.wufoo legend.desc span {
       width: auto; }
   form.wufoo p.instruct {
-    top: calc( 100% - 24px );
+    top: calc( 100% - 12px );
     left: 12px;
     left: 0.75rem;
     right: 12px;
