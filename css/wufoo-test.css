@@ -2368,6 +2368,10 @@ form.wufoo {
     font-size: 1.125rem;
     line-height: 30px;
     line-height: 1.875rem; }
+    form.wufoo label.desc span,
+    form.wufoo label.choice span,
+    form.wufoo legend.desc span {
+      width: auto; }
   form.wufoo p.instruct {
     top: calc( 100% - 24px );
     left: 12px;
@@ -2394,7 +2398,8 @@ form.wufoo {
   form.wufoo span.req {
     margin-left: 3px;
     margin-left: 0.1875rem;
-    color: #ad3333; }
+    color: #ad3333 !important;
+    display: inline-block; }
   form.wufoo input[type="checkbox"],
   form.wufoo input[type="radio"] {
     margin: 0;
